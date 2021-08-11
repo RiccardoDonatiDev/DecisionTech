@@ -47,8 +47,6 @@ namespace DecisionTechTest
 
                 milkCount = CheckForApplicableOffersForMilk(milkCount);
                 butterCount = CheckForApplicableOffersForButter(butterCount);
-                Console.WriteLine($"{milkCount}");
-                Console.WriteLine($"{milkDiscoutToUse}");
 
                 string input = Console.ReadLine();
 
