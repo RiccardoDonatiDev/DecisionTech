@@ -81,9 +81,7 @@ namespace DecisionTechTest
                         {
                             price = price + basket.Milk.Price;
                         }
-
                         milkCount = milkCount + 1;
-
                         break;
                     case "3":
                         Console.WriteLine("Added Butter");
