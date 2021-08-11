@@ -17,27 +17,6 @@ namespace DecisionTechTest
             int breadDiscoutToUse = 0;
             int milkDiscoutToUse = 0;
 
-
-            int CheckForApplicableOffersForMilk(int itemQuantity)
-            {
-                if (itemQuantity == 3)
-                {
-                    milkDiscoutToUse = milkDiscoutToUse + 1;
-                    return 0;
-                }
-                else return itemQuantity;
-            }
-            int CheckForApplicableOffersForButter(int itemQuantity)
-            {
-                if (itemQuantity == 2)
-                {
-
-                    breadDiscoutToUse = breadDiscoutToUse + 1;
-                    return 0;
-                }
-                else return itemQuantity;
-            }
-
           
             Console.WriteLine("Welcome, please type 1 to increase bread quantity, 2 for milk or 3 for butter. Press 5 to focus your basket or 6 to checkout");
 
@@ -97,8 +76,6 @@ namespace DecisionTechTest
                         break;
 
                 }
-
-
                 
             }
 
@@ -124,6 +101,25 @@ namespace DecisionTechTest
                 Console.WriteLine($"The offer 'Buy 2 Butter and get a Bread at 50% off' was applied {(discount.UsedBreadVouchers.Quantity - breadDiscoutToUse).ToString()} time(s)");
             }
 
+            int CheckForApplicableOffersForMilk(int itemQuantity)
+            {
+                if (itemQuantity == 3)
+                {
+                    milkDiscoutToUse = milkDiscoutToUse + 1;
+                    return 0;
+                }
+                else return itemQuantity;
+            }
+            int CheckForApplicableOffersForButter(int itemQuantity)
+            {
+                if (itemQuantity == 2)
+                {
+
+                    breadDiscoutToUse = breadDiscoutToUse + 1;
+                    return 0;
+                }
+                else return itemQuantity;
+            }
 
         }
 
